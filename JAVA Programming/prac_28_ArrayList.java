@@ -10,11 +10,17 @@ public class prac_28_ArrayList {
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<>();  //Initialized ArrayList
-        list.add(1);
+        list.add(1);  // Add element  O(1)
         list.add(2);
         list.add(3);
         list.add(4);
         list.add(5);
+        list.add(1, 9);  // O(n)
+        list.get(2); // Get Element O(1)
+        list.remove(2); // delete Element O(n)
+        list.set(2, 10); //Set Element O(n)
+        list.contains(11); //Contains Element? O(n)
+
 
         // Reverse print
         for (int i = list.size() - 1; i >= 0; i--) {
